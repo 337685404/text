@@ -1,0 +1,17 @@
+父组件---->子组件(props自定义属性)
+		1.引入自己的子组件
+		2.在子组件上绑定自定义属性
+			import Son from 'xxx'
+			<Son name='xxx' age={ this.state.xxx } />
+		3.在子组件内部,哪里要用父组件传过来的值,直接使用this.props.name(属性名)  就可以获取到自定义属性的值
+		
+
+子组件---->父组件(调用父组件的函数以传参的形式传值)
+		1.在父元素中定义一个函数
+				getSondata(){
+					
+				}
+		2.把这个fuc函数绑定到子元素的自定义属性上
+				<Child name="周正" info="傻逼" fuc={this.getSondata}></Child>
+		3.在子组件中需要触发此函数时,调用this.props上的函数即可
+				this.props.getSondata(参数) //调用传入的函数并传参,父元素即可接收到!

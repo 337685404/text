@@ -1,0 +1,17 @@
+
+1.state里定义一个值
+	state = {
+       acc: ''
+	}
+2.在需要获取值的表单组件里让value与acc绑定,
+	<input value={this.state.acc}/>
+
+3.再给表单组件添加onChange事件
+	<input value={this.state.acc} onChange={(e)=>{this.changeS(e)}/>	//onChange这里的e表示是 事件对象event属性
+	
+	changeS(e){
+		//这里的e表示是 事件对象event属性	event.target.value:获取当前事件对象的值
+		this.setState({
+			acc:e.target.value
+		})
+	}

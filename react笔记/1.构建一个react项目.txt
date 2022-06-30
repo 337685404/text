@@ -1,0 +1,13 @@
+React是什么？
+	快速构建页面的JS库， 由FACEBOOK研发， 2013年5月开源
+	它擅长大，超大应用开发！ 性能及高（vue擅长中，小型项目敏捷快速开发）
+	数据驱动，组件化开发，最小粒度更新（diff/fiber）
+
+React 项目创建
+    1.安装脚手架
+        yarn global add create-react-app
+    2.创建项目
+        create-reate-app 项目名
+    3.启动项目
+        1.cd 项目名 
+        2.yarn start

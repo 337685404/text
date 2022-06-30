@@ -1,0 +1,18 @@
+React生命周期函数:
+
+		1.挂载阶段
+			constructor: 初始化组件状态
+			
+			render:渲染
+			
+			componentDidMount:通知,渲染完成,初始化AJAX以及获取DOM节点
+			
+		2.运行阶段
+			shouldComponentUpdate:数据发生改变时, 是否允许更新
+			
+			render:渲染 
+			
+			componentDidUpdate:数据 与 视图 更新完毕
+			
+		3.卸载阶段
+			componentWillUnmount:卸载 停止定时器等浪费内存空间的内容.进行资源回收,防止内存泄漏
